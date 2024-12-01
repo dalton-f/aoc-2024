@@ -38,8 +38,8 @@ for (let i = 0; i < list_one.length; i++) {
   const value_1 = list_one[i];
   const value_2 = list_two[i];
 
-  // Calculate the difference - POTENTIAL IMPROVEMENT AFTER SOLVING: Use of Math.abs() here
-  const difference = Math.max(value_1, value_2) - Math.min(value_1, value_2);
+  // Calculate the difference
+  const difference = Math.abs(value_1 - value_2);
 
   // Add it to the sum
   sum += difference;
