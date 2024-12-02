@@ -4,15 +4,9 @@ let text = fs.readFileSync("days/day-02/input.txt", "utf-8");
 
 const reports = text.trim().split("\n");
 
-let safeReportCount = 0;
-
-for (const report of reports) {
-  // Convert all values to integers
+const isSafe = (report) => {
   const levels = report.split(" ").map(Number);
 
-  console.log(`Levels: ${levels}`);
-
-  // Check a report is increasing or decreasing
   const isAscending = levels.every(
     (level, index) => index === 0 || level > levels[index - 1]
   );
@@ -21,24 +15,20 @@ for (const report of reports) {
     (level, index) => index === 0 || level < levels[index - 1]
   );
 
-  console.log(
-    `Report: ${report}, isAscending: ${isAscending}, isDescending: ${isDescending}`
-  );
-
   // If the report is not ascending or descending, it is not safe so skip it
-  if (!isAscending && !isDescending) continue;
+  if (!isAscending && !isDescending) return false;
 
-  // Calculate the differences between each subsequent level in the report
-  const differences = levels
-    .slice(1)
-    .map((level, index) => Math.abs(level - levels[index]));
+  // Check the differences in values
+  for (let i = 0; i < levels.length - 1; i++) {
+    const diff = Math.abs(levels[i + 1] - levels[i]);
 
-  console.log(`Report: ${report}, Differences: ${differences}`);
+    // If the difference is not >= 1 or <= 3 then skip it
+    if (diff < 1 || diff > 3) return false;
+  }
 
-  // Check that every difference is at least one and at most three
-  const isSafeReport = differences.every((value) => value >= 1 && value <= 3);
+  return true;
+};
 
-  if (isSafeReport) safeReportCount++;
-}
+const safeReportCount = reports.filter(isSafe).length;
 
 console.log(`Safe report count: ${safeReportCount}`);
