@@ -1,11 +1,7 @@
-// Puzzle Summary - Part 1:
-
-// Get the sum of the differences of pairs from both lists in ascending order
-
-// My first idea is to extract both lists, sort them, and loop through them to get their difference and then sum
-// This can simply be done with a couple of loops, .sort() and .reduce() - using .sort() means it would increase the time complexity
-
-// The hardest part of this initial puzzle seems to be parsing the input - we can loop through it row by row and generate each list manually
+////////////////////////////////////////////////////////////////
+// Advent of Code 2024 Day 1 - Historian Hysteria
+// Link: https://adventofcode.com/2024/day/1
+////////////////////////////////////////////////////////////////
 
 const fs = require("fs");
 

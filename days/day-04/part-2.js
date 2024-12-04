@@ -1,3 +1,8 @@
+////////////////////////////////////////////////////////////////
+// Advent of Code 2024 Day 4 - Ceres Search
+// Link: https://adventofcode.com/2024/day/4
+////////////////////////////////////////////////////////////////
+
 const fs = require("fs");
 
 const text = fs.readFileSync("days/day-04/input.txt", "utf-8");
@@ -5,10 +10,6 @@ const text = fs.readFileSync("days/day-04/input.txt", "utf-8");
 const lines = text.split("\n");
 
 let total = 0;
-
-// M.S
-// .A.
-// M.S
 
 // Loop over the entire input
 for (let i = 0; i < lines.length - 2; i++) {

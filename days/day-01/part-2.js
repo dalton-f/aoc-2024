@@ -1,3 +1,8 @@
+////////////////////////////////////////////////////////////////
+// Advent of Code 2024 Day 1 - Historian Hysteria
+// Link: https://adventofcode.com/2024/day/1
+////////////////////////////////////////////////////////////////
+
 // For the second part of the puzzle, we need to get the count how many times a given number in the left list appears in the right list
 // Using this we can multiply the two values and take the sum to calculate the similarity score
 

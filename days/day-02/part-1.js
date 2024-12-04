@@ -1,3 +1,8 @@
+////////////////////////////////////////////////////////////////
+// Advent of Code 2024 Day 2 - Red-Nosed Reports
+// Link: https://adventofcode.com/2024/day/2
+////////////////////////////////////////////////////////////////
+
 const fs = require("fs");
 
 let text = fs.readFileSync("days/day-02/input.txt", "utf-8");
