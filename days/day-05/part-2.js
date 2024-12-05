@@ -24,12 +24,10 @@ let total = 0;
 for (const rule of rules) {
   const [priorityNumber, secondaryNumber] = rule.split("|").map(Number);
 
-  // Create a hashmap where a key is a number and the value is an array of numbers that it must be befer
-  if (orders[priorityNumber]) {
-    orders[priorityNumber].push(secondaryNumber);
-  } else {
-    orders[priorityNumber] = [secondaryNumber];
-  }
+  // Create a hashmap where a key is a number and the value is an array of numbers that it must be before
+  orders[priorityNumber] = orders[priorityNumber] || [];
+
+  orders[priorityNumber].push(secondaryNumber);
 }
 
 // For every update
@@ -70,10 +68,9 @@ for (const update of updates) {
   }
 }
 
-for (const update of incorrectlyOrderedUpdates) {
+incorrectlyOrderedUpdates.forEach((update) => {
   const middle = Math.floor(update.length / 2);
-
   total += update[middle];
-}
+});
 
 console.log(total);

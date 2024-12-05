@@ -22,14 +22,12 @@ const correctlyOrderedUpdates = [];
 let total = 0;
 
 for (const rule of rules) {
-  const [priorityNumber, secondaryNumber] = rule.split("|");
+  const [priorityNumber, secondaryNumber] = rule.split("|").map(Number);
 
-  // Create a hashmap where a key is a number and the value is an array of numbers that it must be befer
-  if (orders[priorityNumber]) {
-    orders[priorityNumber].push(parseInt(secondaryNumber));
-  } else {
-    orders[priorityNumber] = [parseInt(secondaryNumber)];
-  }
+  // Create a hashmap where a key is a number and the value is an array of numbers that it must be before
+  orders[priorityNumber] = orders[priorityNumber] || [];
+
+  orders[priorityNumber].push(secondaryNumber);
 }
 
 // For every update
@@ -46,7 +44,6 @@ for (const update of updates) {
 
     // Make sure that the pair follows the rules
     const rules = orders[currNumber];
-
     const nextRules = orders[nextNumber];
 
     // If the current number should be after the next number, it is wrong
