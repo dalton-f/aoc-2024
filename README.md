@@ -33,3 +33,7 @@ Relatively simple problem, I found part 2 much easier than part 1 due to the way
 ### Day 5:
 
 Very wordy problem, the multi-part input threw me off a bit, but my first idea for a solution seemed to work (thank god for hashmaps) and the part 2 code was very similar to part one, although I had to make some slight changes so the swapping of values didn't reverse itself and had to make sure the code did enough passes to fix all rules. Happy with today, compared to last year I am glad that this wasn't a brute-force solution
+
+### Day 6:
+
+Hardest day so far, attempted part 1 without using a 2d array and still think it is possible to get to work, struggled a lot with part 2 even after looking at videos and other peoples solution. Using this brute force technique is obviously a lot of wasted time and resources, so I will look to adjust it
