@@ -37,3 +37,5 @@ Very wordy problem, the multi-part input threw me off a bit, but my first idea f
 ### Day 6:
 
 Hardest day so far, attempted part 1 without using a 2d array and still think it is possible to get to work, struggled a lot with part 2 even after looking at videos and other peoples solution. Using this brute force technique is obviously a lot of wasted time and resources, so I will look to adjust it
+
+After going back over the problem, my original more optimised solution was using only the intersections of positions without considering the orientation, which is why it created a higher value - so now we use the part 1 distinct squares and test all of them, instead of every square. It is slightly faster but still not very quick
