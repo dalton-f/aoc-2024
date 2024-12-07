@@ -11,19 +11,27 @@ const calibrationEquations = text.split("\n");
 
 let total = 0;
 
-const operators = ["+", "*"];
-
 const evaluateValidEquations = (numbers, target, current) => {
   // Base case: one number left
   if (numbers.length === 1) {
-    // If this number is the final number as part of an equation and can reach target, the expression is valid
-    return current + numbers[0] === target || current * numbers[0] === target;
+    // Check if the remaining number can use any operators to reach the target
+    return (
+      current + numbers[0] === target ||
+      current * numbers[0] === target ||
+      parseInt(`${current}${numbers[0]}`) === target
+    );
   }
 
   // Recursive case: try each operator with the remaining numbers
+  // Add an extra line for concatenation in part 2
   return (
     evaluateValidEquations(numbers.slice(1), target, current + numbers[0]) ||
-    evaluateValidEquations(numbers.slice(1), target, current * numbers[0])
+    evaluateValidEquations(numbers.slice(1), target, current * numbers[0]) ||
+    evaluateValidEquations(
+      numbers.slice(1),
+      target,
+      parseInt(`${current}${numbers[0]}`)
+    )
   );
 };
 
