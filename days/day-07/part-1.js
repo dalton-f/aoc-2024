@@ -11,12 +11,10 @@ const calibrationEquations = text.split("\n");
 
 let total = 0;
 
-const operators = ["+", "*"];
-
 const evaluateValidEquations = (numbers, target, current) => {
   // Base case: one number left
   if (numbers.length === 1) {
-    // If this number is the final number as part of an equation and can reach target, the expression is valid
+    // Check if the remaining number can use any operators to reach the target
     return current + numbers[0] === target || current * numbers[0] === target;
   }
 
