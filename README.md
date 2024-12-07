@@ -41,3 +41,7 @@ Hardest day so far, attempted part 1 without using a 2d array and still think it
 After going back over the problem, my original more optimised solution was using only the intersections of positions without considering the orientation, which is why it created a higher value - so now we use the part 1 distinct squares and test all of them, instead of every square. It is slightly faster but still not very quick.
 
 This solution also reuses a lot of logic that is slightly altered, so I imagine the code could become more modular
+
+### Day 7:
+
+Hardest day so far compared to day 6 - I could not come up with a woring brute-force solution let alone one that was intuitive. Opted to use recursion after some research, but I am unsure if I could recreate a recursive or iterative solution for a similar problem given the chance. Luckily part 2 required very little changes to the code, but I do not think I would have come up with a recursive solution by myself. I wonder if there is a dynamic programming way to solve this.
