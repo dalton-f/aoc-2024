@@ -42,32 +42,41 @@ for (const char in antennaLocations) {
       const dx = x1 - x2;
       const dy = y1 - y2;
 
-      // Calculate the position the antinodes on either side
-      // If we don't multiple by two and use the identical offset, we will just reach the pair coordinates
-      // Apply the offset in both directions
-      const antinode1 = [x1 - dx * 2, y1 - dy * 2];
-      const antinode2 = [x2 + dx * 2, y2 + dy * 2];
+      // For part 2, we need to continue to add the offset to account for the "effects of resonant harmonics"
 
-      // For both antinodes
-      for (const node of [antinode1, antinode2]) {
-        const [x, y] = node;
+      let node = [x1 - dx, y1 - dy];
 
-        // Check if the antinode is within the grid
-        if (0 <= x && x < rows && 0 <= y && y < columns) {
-          //   console.log(
-          //     `A valid antinodes for the pair: (${x1},${y1}) and (${x2},${y2}) is (${node})`
-          //   );
+      // Use two while loops, one for up and one for down
 
-          // Add the antinode to the grid
-          grid[x][y] = "#";
-        }
+      while (
+        node[0] >= 0 &&
+        node[0] < rows &&
+        node[1] >= 0 &&
+        node[1] < columns
+      ) {
+        // Add the antinode to the grid
+        grid[node[0]][node[1]] = "#";
+        node = [node[0] - dx, node[1] - dy];
+      }
+
+      node = [x2 + dx, y2 + dy];
+
+      while (
+        node[0] >= 0 &&
+        node[0] < rows &&
+        node[1] >= 0 &&
+        node[1] < columns
+      ) {
+        // Add the antinode to the grid
+        grid[node[0]][node[1]] = "#";
+        node = [node[0] + dx, node[1] + dy];
       }
     }
   }
 }
 
 // Visualise the grid
-// console.log(grid.map((row) => row.join("")).join("\n"));
+console.log(grid.map((row) => row.join("")).join("\n"));
 
 // Doing this manually instead of increasing it directly after checking antinodes because it was creating an off by one error and I don't know why
 // This also helps to visualise
