@@ -45,3 +45,7 @@ This solution also reuses a lot of logic that is slightly altered, so I imagine 
 ### Day 7:
 
 Hardest day so far compared to day 6 - I could not come up with a woring brute-force solution let alone one that was intuitive. Opted to use recursion after some research, but I am unsure if I could recreate a recursive or iterative solution for a similar problem given the chance. Luckily part 2 required very little changes to the code, but I do not think I would have come up with a recursive solution by myself. I wonder if there is a dynamic programming way to solve this.
+
+### Day 8:
+
+The problem made more sense after watching a couple of videos, but I drew a blank trying to solve it alone

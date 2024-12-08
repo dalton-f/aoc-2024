@@ -22,8 +22,7 @@ for (let i = 0; i < rows; i++) {
 
     if (char === ".") continue;
 
-    if (antennaLocations[char]) antennaLocations[char].push([i, j]);
-    else antennaLocations[char] = [[i, j]];
+    (antennaLocations[char] ||= []).push([i, j]);
   }
 }
 
@@ -76,7 +75,7 @@ for (const char in antennaLocations) {
 }
 
 // Visualise the grid
-console.log(grid.map((row) => row.join("")).join("\n"));
+// console.log(grid.map((row) => row.join("")).join("\n"));
 
 // Doing this manually instead of increasing it directly after checking antinodes because it was creating an off by one error and I don't know why
 // This also helps to visualise

@@ -19,11 +19,8 @@ const antennaLocations = {};
 for (let i = 0; i < rows; i++) {
   for (let j = 0; j < columns; j++) {
     const char = grid[i][j];
-
     if (char === ".") continue;
-
-    if (antennaLocations[char]) antennaLocations[char].push([i, j]);
-    else antennaLocations[char] = [[i, j]];
+    (antennaLocations[char] ||= []).push([i, j]);
   }
 }
 
