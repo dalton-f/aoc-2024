@@ -49,3 +49,9 @@ Hardest day so far compared to day 6 - I could not come up with a woring brute-f
 ### Day 8:
 
 The problem made more sense after watching a couple of videos, but I drew a blank trying to solve it alone
+
+### Day 9:
+
+A much easier part 1 problem compared to the previous few days, I was able to get 99% of the solution by myself and only struggled when it came to dealing with multi-digit ids, after swapping to using arrays instead of strings my pointer approach had some bugs to iron out. Overall I am very happy with the code I have written for todays solution.
+
+Part 2 was a lot harder, my solution idea generally worked but I needed to work out a lot of random cases and such to prevent weird behaviour from occuring.
