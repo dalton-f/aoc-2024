@@ -58,4 +58,4 @@ Part 2 was a lot harder, my solution idea generally worked but I needed to work 
 
 ### Day 10:
 
-I felt relatively confident approaching this problem, and was able to come up with a recursive DFS without much trouble. The code however took a lot of effort to simplify and I had to swap to using a stack to get the correct answer out of part 1 - I did not consider to track visited positions.
+I felt relatively confident approaching this problem, and was able to come up with a recursive DFS without much trouble. The code however took a lot of effort to simplify and I had to swap to using a stack to get the correct answer out of part 1 - I did not consider to track visited positions. Part 2 was very simple after completing part 1, just had to remove the "visited" check and count the length of endpoints
