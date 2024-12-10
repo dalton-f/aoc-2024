@@ -55,3 +55,7 @@ The problem made more sense after watching a couple of videos, but I drew a blan
 A much easier part 1 problem compared to the previous few days, I was able to get 99% of the solution by myself and only struggled when it came to dealing with multi-digit ids, after swapping to using arrays instead of strings my pointer approach had some bugs to iron out. Overall I am very happy with the code I have written for todays solution.
 
 Part 2 was a lot harder, my solution idea generally worked but I needed to work out a lot of random cases and such to prevent weird behaviour from occuring.
+
+### Day 10:
+
+I felt relatively confident approaching this problem, and was able to come up with a recursive DFS without much trouble. The code however took a lot of effort to simplify and I had to swap to using a stack to get the correct answer out of part 1 - I did not consider to track visited positions.
