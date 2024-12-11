@@ -66,4 +66,4 @@ I am glad today's problem wasn't any array traversal or graphing algorithm - rel
 
 Originally in part 1 I did all the changes in place, but I swapped to generating a new array because I believe .splice was causing the code to be very slow and now the part 1 code runs much faster
 
-In hindsight, making this change was necessary for a chance at part 2 working (which of course it didn't) - the code is identical, just with more transformations
+In hindsight, making this change was necessary for a chance at part 2 working (which of course it didn't) - the code is identical, just with more transformations. I hadn't realised this puzzle would be so focused on performance, but by adding a simple cache and checking each stone indiviudally we can improve the run time singificantly to 135ms

@@ -10,6 +10,8 @@ const cache = new Map();
 
 const blinks = 75;
 
+console.time("Speed");
+
 // For part 2, we transform one stone at a time
 const transformStone = (stone, blinks) => {
   // Check the cache for a quickly returned result
@@ -50,3 +52,5 @@ const totalStones = stones.reduce((a, b) => a + transformStone(b, blinks), 0);
 console.log(
   `After ${blinks} transformations, the stones have a length of ${totalStones}`
 );
+
+console.timeEnd("Speed");
