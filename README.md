@@ -59,3 +59,9 @@ Part 2 was a lot harder, my solution idea generally worked but I needed to work 
 ### Day 10:
 
 I felt relatively confident approaching this problem, and was able to come up with a recursive DFS without much trouble. The code however took a lot of effort to simplify and I had to swap to using a stack to get the correct answer out of part 1 - I did not consider to track visited positions. Part 2 was very simple after completing part 1, just had to remove the "visited" check and count the length of endpoints
+
+### Day 11:
+
+I am glad today's problem wasn't any array traversal or graphing algorithm - relaively simple problem on the surface and didn't take long to code up and work for the example inputs, I did not consider that performance was going to be a problem and running it on the real input takes quite a while - I need to figure out some optimisations to speed this up. I guess my console.logs were slowing the code down quite a lot, but it is still a slower solution than I'd like for part 1.
+
+Originally in part 1 I did all the changes in place, but I swapped to generating a new array because I believe .splice was causing the code to be very slow and now the part 1 code runs much faster
