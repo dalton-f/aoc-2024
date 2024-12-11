@@ -65,3 +65,5 @@ I felt relatively confident approaching this problem, and was able to come up wi
 I am glad today's problem wasn't any array traversal or graphing algorithm - relaively simple problem on the surface and didn't take long to code up and work for the example inputs, I did not consider that performance was going to be a problem and running it on the real input takes quite a while - I need to figure out some optimisations to speed this up. I guess my console.logs were slowing the code down quite a lot, but it is still a slower solution than I'd like for part 1.
 
 Originally in part 1 I did all the changes in place, but I swapped to generating a new array because I believe .splice was causing the code to be very slow and now the part 1 code runs much faster
+
+In hindsight, making this change was necessary for a chance at part 2 working (which of course it didn't) - the code is identical, just with more transformations
