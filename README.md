@@ -67,3 +67,9 @@ I am glad today's problem wasn't any array traversal or graphing algorithm - rel
 Originally in part 1 I did all the changes in place, but I swapped to generating a new array because I believe .splice was causing the code to be very slow and now the part 1 code runs much faster
 
 In hindsight, making this change was necessary for a chance at part 2 working (which of course it didn't) - the code is identical, just with more transformations. I hadn't realised this puzzle would be so focused on performance, but by adding a simple cache and checking each stone indiviudally we can improve the run time singificantly to 135ms
+
+### Day 12:
+
+Pretty similar to day 10, the bfs pretty much just solves the perimeter and area at once so you don't have to think too much and just add to the total price - interestingly enough, you cannot simply have [x, y] as a key for the set and MUST convert to a string for the tracking of visited cells to work. Another day with another graphing algorithm, but good practice nonetheless.
+
+I have no idea how to do part 2
