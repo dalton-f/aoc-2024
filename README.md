@@ -73,3 +73,7 @@ In hindsight, making this change was necessary for a chance at part 2 working (w
 Pretty similar to day 10, the bfs pretty much just solves the perimeter and area at once so you don't have to think too much and just add to the total price - interestingly enough, you cannot simply have [x, y] as a key for the set and MUST convert to a string for the tracking of visited cells to work. Another day with another graphing algorithm, but good practice nonetheless.
 
 I have no idea how to do part 2
+
+### Day 13:
+
+A brute force solution makes sense, but is slow. The input formatting is very inconvinent so takes up a lot of the code. Obviously brute forcing part 2 is impossible, similar to day 11. I had to watch a video for part 2 to understand the maths and optimisations. It is getting to a point in the event where it is difficult for me to come up with these soltuions by myself. The linear algebra makes sense, but my math isn't that strong
