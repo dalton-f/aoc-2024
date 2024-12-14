@@ -87,3 +87,11 @@ Today I created the create-day.js file to generate a days folder more easily wit
 Part 1 I generally had the right idea, just executed slightly poorly, especially when it came to using a loop when I didn't have to. I thought one modulus operation on width and height would be enough, but clearly not. Happy that I derived a similar way to deal with the quadrants as most others by using the middle values and testing if it was before or after.
 
 Part 2 simply does not provide enough context to be meaningfully solved without making major assumptions, or brute forcing to look for a Christmas tree. I think this is probably an issue with the way the problem is written, but the code/solution is pretty slow too. Assuming the link between part 1 and 2 without additional details probably makes this the hardest part 2 to understand.
+
+For part 2 you can test for:
+
+- brute forcing the minimum safety factor
+- the first point where no robot overlaps
+- a much lower entropy where robots have more neighbours
+- search for a vertical lineup and assume it is the trunk?
+- search for largest contiguous regions
