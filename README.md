@@ -85,3 +85,5 @@ After yesterday, I changed my approach to the problems and tried to get a deep u
 Today I created the create-day.js file to generate a days folder more easily withthe command node create-day {number}
 
 Part 1 I generally had the right idea, just executed slightly poorly, especially when it came to using a loop when I didn't have to. I thought one modulus operation on width and height would be enough, but clearly not. Happy that I derived a similar way to deal with the quadrants as most others by using the middle values and testing if it was before or after.
+
+Part 2 simply does not provide enough context to be meaningfully solved without making major assumptions, or brute forcing to look for a Christmas tree. I think this is probably an issue with the way the problem is written, but the code/solution is pretty slow too. Assuming the link between part 1 and 2 without additional details probably makes this the hardest part 2 to understand.
