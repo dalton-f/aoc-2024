@@ -77,3 +77,9 @@ I have no idea how to do part 2
 ### Day 13:
 
 A brute force solution makes sense, but is slow. The input formatting is very inconvinent so takes up a lot of the code. Obviously brute forcing part 2 is impossible, similar to day 11. I had to watch a video for part 2 to understand the maths and optimisations. It is getting to a point in the event where it is difficult for me to come up with these soltuions by myself. The linear algebra makes sense, but my math isn't that strong
+
+### Day 14:
+
+After yesterday, I changed my approach to the problems and tried to get a deep understanding of the problem outside of the context of the event to attempt and find a more clear solution - I think a lot of the AOC "story" is throwing me off so I want to look at the problems from a wider perspective in a more general manner and then add the context back in. I am also starting to wish I set up a better environment for this event, certainly something I need to look at for next year
+
+Today I created the create-day.js file to generate a days folder more easily withthe command node create-day {number}
