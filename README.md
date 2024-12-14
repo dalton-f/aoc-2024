@@ -83,3 +83,5 @@ A brute force solution makes sense, but is slow. The input formatting is very in
 After yesterday, I changed my approach to the problems and tried to get a deep understanding of the problem outside of the context of the event to attempt and find a more clear solution - I think a lot of the AOC "story" is throwing me off so I want to look at the problems from a wider perspective in a more general manner and then add the context back in. I am also starting to wish I set up a better environment for this event, certainly something I need to look at for next year
 
 Today I created the create-day.js file to generate a days folder more easily withthe command node create-day {number}
+
+Part 1 I generally had the right idea, just executed slightly poorly, especially when it came to using a loop when I didn't have to. I thought one modulus operation on width and height would be enough, but clearly not. Happy that I derived a similar way to deal with the quadrants as most others by using the middle values and testing if it was before or after.
