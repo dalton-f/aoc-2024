@@ -99,3 +99,5 @@ For part 2 you can test for:
 # Day 15:
 
 Relatively happy solving part 1 myself, with some adjustments and optimisations to move the boxes, keep coming across a weird bug with the direction offsets though. I struggled for a logn time as my x and y directions had to be reversed, for some reason
+
+Part 2 I can get as far as doubleing the input, but adding logic for all the checks and things isn't something I want to spend time on right now
