@@ -95,3 +95,7 @@ For part 2 you can test for:
 - a much lower entropy where robots have more neighbours
 - search for a vertical lineup and assume it is the trunk?
 - search for largest contiguous regions
+
+# Day 15:
+
+Relatively happy solving part 1 myself, with some adjustments and optimisations to move the boxes, keep coming across a weird bug with the direction offsets though. I struggled for a logn time as my x and y directions had to be reversed, for some reason
