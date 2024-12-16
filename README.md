@@ -96,8 +96,14 @@ For part 2 you can test for:
 - search for a vertical lineup and assume it is the trunk?
 - search for largest contiguous regions
 
-# Day 15:
+### Day 15:
 
 Relatively happy solving part 1 myself, with some adjustments and optimisations to move the boxes, keep coming across a weird bug with the direction offsets though. I struggled for a logn time as my x and y directions had to be reversed, for some reason
 
 Part 2 I can get as far as doubleing the input, but adding logic for all the checks and things isn't something I want to spend time on right now
+
+### Day 16:
+
+My first instinct for part 1 is that it is obviously trying to the find the shorest path, so Dijkstra's algorithm might be the way to go. This may still be a possible solution, but you would have to derive an adjacecy list from the input and also consider a way to track the direction changes for score counting. I am unsure if we can assume that the shortest path = lowest score, especially if there are multiple paths of the same length with different scores, additional checks would have to be performed to account for this. But this turns out to work quite well with as a solution anyway because we are told the "cost" of each potential movement so we actually look for the lowest cost and not the shortest number of edges. I think there is a way to solve part 1 with a bfs or dfs but swapping the valid directions and things is quite complicated, and since dijkstras is more focused on shortets path, this works fine. Since we can't simulate a heap or priority queue effectively, we can use an array that is constantly sorted
+
+My initial heap implementation was actually slowing me down because of using .sort in the full input, so had to optimise it with some research
