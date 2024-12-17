@@ -115,3 +115,5 @@ Like I kind of assumed in part 1, many of the paths have the exact same cost so 
 I overestimated how difficult part 1 of today would be, it is quite simple once you get past all the words.. I think I am starting to reach the limit of my capabilities when it comes to these problems, but I am glad it isn't another grid problem.
 
 I am very impressed I managed to get part 1 with almost no bugs, and some very clean code after deciphering the puzzle.
+
+Brute forcing part 2 is not even slightly possible due to the scale of numbers. It has to be reverse engineered by hand, where we drop 3 bits from the binary value of register A and print them until we have no bits left, which prints out the program
