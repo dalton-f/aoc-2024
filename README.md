@@ -113,3 +113,5 @@ Like I kind of assumed in part 1, many of the paths have the exact same cost so 
 ### Day 17:
 
 I overestimated how difficult part 1 of today would be, it is quite simple once you get past all the words.. I think I am starting to reach the limit of my capabilities when it comes to these problems, but I am glad it isn't another grid problem.
+
+I am very impressed I managed to get part 1 with almost no bugs, and some very clean code after deciphering the puzzle.
