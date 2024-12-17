@@ -109,3 +109,7 @@ My first instinct for part 1 is that it is obviously trying to the find the shor
 My initial heap implementation was actually slowing me down because of using .sort in the full input, so had to optimise it with some research.
 
 Like I kind of assumed in part 1, many of the paths have the exact same cost so the search has to be extended in part 2 to count all tiles visited by all best paths. I have no understanding of part 2, even after watching a video which taks about backtracking etc.
+
+### Day 17:
+
+I overestimated how difficult part 1 of today would be, it is quite simple once you get past all the words.. I think I am starting to reach the limit of my capabilities when it comes to these problems, but I am glad it isn't another grid problem.
