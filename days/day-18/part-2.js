@@ -54,6 +54,8 @@ const bfs = (grid) => {
   return false;
 };
 
+console.time("Speed");
+
 // Generate a 2d grid with the given size + 1 because of zero-indexing, and fill with zeros
 let grid = Array.from(Array(gridSize + 1), (_) => Array(gridSize + 1).fill(0));
 
@@ -66,11 +68,16 @@ for (let i = 0; i < input.length; i++) {
   // Add corrupted memory to the grid square
   grid[r][c] = 1;
 
-  // Run a bfs to check for an exit
-  const hasValidExit = bfs(grid);
+  // Run a bfs to check for an exit (assuming the first 1024 are valid)
 
-  if (!hasValidExit) {
-    console.log("Part 2:", byte);
-    break;
+  if (i >= 1024) {
+    const hasValidExit = bfs(grid);
+
+    if (!hasValidExit) {
+      console.log("Part 2:", byte);
+      break;
+    }
   }
 }
+
+console.timeEnd("Speed");
