@@ -120,4 +120,4 @@ Brute forcing part 2 is not even slightly possible due to the scale of numbers. 
 
 ### Day 18:
 
-Part 1 seems simple, another grid and bfs problem. Very similar to previous problems
+Part 1 seems simple, another grid and bfs problem. Very similar to previous problems. Part 2 can be done with a linear or binear search. Linear makes more sense to me but is slower (taking about 3 seconds to run). I managed to create a linear search by myself and solve the problem, but of course a binear search would be much faster.
