@@ -117,3 +117,7 @@ I overestimated how difficult part 1 of today would be, it is quite simple once 
 I am very impressed I managed to get part 1 with almost no bugs, and some very clean code after deciphering the puzzle.
 
 Brute forcing part 2 is not even slightly possible due to the scale of numbers. It has to be reverse engineered by hand, where we drop 3 bits from the binary value of register A and print them until we have no bits left, which prints out the program
+
+### Day 18:
+
+Part 1 seems simple, another grid and bfs problem. Very similar to previous problems
