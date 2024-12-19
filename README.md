@@ -123,3 +123,7 @@ Brute forcing part 2 is not even slightly possible due to the scale of numbers. 
 Part 1 seems simple, another grid and bfs problem. Very similar to previous problems. Part 2 can be done with a linear or binear search. Linear makes more sense to me but is slower (taking about 3 seconds to run). I managed to create a linear search by myself and solve the problem, but of course a binear search would be much faster.
 
 Could also use part 1 and check the first 1024 for the valid solution, then add bytes from there to check if the path is blocked which halves the runtime
+
+### Day 19:
+
+Very simple problem today, just some recursion and cacheing stuff, very surprised at the difficulty as we are so far into the event now. For part 1 I did add cacheing but it doesn't look like it makes any difference to the runtime.
