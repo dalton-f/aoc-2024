@@ -27,24 +27,33 @@ let total = 0;
 
 console.time("Speed");
 
+const cache = {};
+
 const canMakeDesign = (design) => {
+  // Base case where the string is empty so it can be made
   if (design.length === 0) return true;
+
+  // Add some basic cacheing for optimisation purposes
+  if (cache[design]) return cache[design];
 
   // Generate all groups of substrings within a given design string
   for (let i = 1; i <= design.length; i++) {
     const group = design.slice(0, i);
 
     // Check if the group is a valid pattern and can the rest of the design after it
-    if (patterns.includes(group) && canMakeDesign(design.slice(i), patterns)) {
+    if (patterns.includes(group) && canMakeDesign(design.slice(i))) {
+      cache[design] = true;
       return true;
     }
   }
+
+  cache[design] = false;
 
   return false;
 };
 
 for (const design of designs) {
-  let canMake = canMakeDesign(design, patterns);
+  let canMake = canMakeDesign(design);
 
   if (canMake) total++;
 }
