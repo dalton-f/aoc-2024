@@ -126,4 +126,4 @@ Could also use part 1 and check the first 1024 for the valid solution, then add 
 
 ### Day 19:
 
-Very simple problem today, just some recursion and cacheing stuff, very surprised at the difficulty as we are so far into the event now. For part 1 I did add cacheing but it doesn't look like it makes any difference to the runtime.
+Very simple problem today, just some recursion and cacheing stuff, very surprised at the difficulty as we are so far into the event now. For part 1 I did add cacheing but it doesn't look like it makes any difference to the runtime. Cacheing was however necessary for part 2
