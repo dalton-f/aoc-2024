@@ -127,3 +127,15 @@ Could also use part 1 and check the first 1024 for the valid solution, then add 
 ### Day 19:
 
 Very simple problem today, just some recursion and cacheing stuff, very surprised at the difficulty as we are so far into the event now. For part 1 I did add cacheing but it doesn't look like it makes any difference to the runtime. Cacheing was however necessary for part 2
+
+### Day 20:
+
+Another dijkstra problem with the "cheating" element. No clue how to solve this.
+
+### Day 21:
+
+I might be able to solve part 1 of this problem, but would require a lot of time.
+
+### Day 22:
+
+Today seems decepetively easy, only issue I had with part 1 was having to use BigInts to prevent overflows.
