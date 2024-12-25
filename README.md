@@ -138,4 +138,4 @@ I might be able to solve part 1 of this problem, but would require a lot of time
 
 ### Day 22:
 
-Today seems decepetively easy, only issue I had with part 1 was having to use BigInts to prevent overflows.
+Today seems decepetively easy, only issue I had with part 1 was having to use BigInts to prevent overflows. No clue how to do part 2
